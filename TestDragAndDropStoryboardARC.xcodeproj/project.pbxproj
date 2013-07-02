@@ -17,7 +17,6 @@
 		D08178A217832FB700B872A2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08178A117832FB700B872A2 /* Default@2x.png */; };
 		D08178A417832FB700B872A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08178A317832FB700B872A2 /* Default-568h@2x.png */; };
 		D08178A717832FB700B872A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08178A517832FB700B872A2 /* MainStoryboard.storyboard */; };
-		D08178AA17832FB700B872A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08178A917832FB700B872A2 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +34,6 @@
 		D08178A117832FB700B872A2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D08178A317832FB700B872A2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D08178A617832FB700B872A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D08178A817832FB700B872A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D08178A917832FB700B872A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +53,7 @@
 		D081788117832FB700B872A2 = {
 			isa = PBXGroup;
 			children = (
-				D081789317832FB700B872A2 /* TestDragAndDropStoryboardARC */,
+				D081789317832FB700B872A2 /* TestApplication */,
 				D081788C17832FB700B872A2 /* Frameworks */,
 				D081788B17832FB700B872A2 /* Products */,
 			);
@@ -80,16 +77,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D081789317832FB700B872A2 /* TestDragAndDropStoryboardARC */ = {
+		D081789317832FB700B872A2 /* TestApplication */ = {
 			isa = PBXGroup;
 			children = (
 				D081789C17832FB700B872A2 /* AppDelegate.h */,
 				D081789D17832FB700B872A2 /* AppDelegate.m */,
 				D08178A517832FB700B872A2 /* MainStoryboard.storyboard */,
-				D08178A817832FB700B872A2 /* ViewController.h */,
-				D08178A917832FB700B872A2 /* ViewController.m */,
 				D081789417832FB700B872A2 /* Supporting Files */,
 			);
+			name = TestApplication;
 			path = TestDragAndDropStoryboardARC;
 			sourceTree = "<group>";
 		};
@@ -175,7 +171,6 @@
 			files = (
 				D081789A17832FB700B872A2 /* main.m in Sources */,
 				D081789E17832FB700B872A2 /* AppDelegate.m in Sources */,
-				D08178AA17832FB700B872A2 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
