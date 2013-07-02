@@ -16,7 +16,7 @@
     if(( self = [super initWithCoder:aDecoder] )) {
         self.delegate = self;
         self.dataSource = self;
-        items = [[NSMutableArray alloc] initWithObjects:@"Whole Wheat Banana Nut Bread", @"Pasta with Meat Sauce", @"Cold Raspberry Popsicles", @"Hot Fudge", @"Cereal", nil];
+        items = [[NSMutableArray alloc] initWithObjects:@"Nut Bread", @"Pasta with Meat Sauce", @"Cold Raspberry Popsicles", @"Hot Fudge", @"Cereal", nil];
         
         // Register ourselves with the DnD overlay.
         [[DnDManager instance] registerDnDItem:self withOverlayId:@"testDND"];
