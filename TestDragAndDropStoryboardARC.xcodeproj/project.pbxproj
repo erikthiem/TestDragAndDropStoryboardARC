@@ -17,6 +17,10 @@
 		D08178A217832FB700B872A2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08178A117832FB700B872A2 /* Default@2x.png */; };
 		D08178A417832FB700B872A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08178A317832FB700B872A2 /* Default-568h@2x.png */; };
 		D08178A717832FB700B872A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08178A517832FB700B872A2 /* MainStoryboard.storyboard */; };
+		D08178EE178332A000B872A2 /* destinationTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D08178D8178332A000B872A2 /* destinationTable.m */; };
+		D08178EF178332A000B872A2 /* DnDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D08178DA178332A000B872A2 /* DnDManager.m */; };
+		D08178F0178332A000B872A2 /* DnDOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D08178DC178332A000B872A2 /* DnDOverlayView.m */; };
+		D08178F6178332A000B872A2 /* sourceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D08178E7178332A000B872A2 /* sourceTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,15 @@
 		D08178A117832FB700B872A2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D08178A317832FB700B872A2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D08178A617832FB700B872A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D08178D7178332A000B872A2 /* destinationTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = destinationTable.h; sourceTree = "<group>"; };
+		D08178D8178332A000B872A2 /* destinationTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = destinationTable.m; sourceTree = "<group>"; };
+		D08178D9178332A000B872A2 /* DnDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDManager.h; sourceTree = "<group>"; };
+		D08178DA178332A000B872A2 /* DnDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDManager.m; sourceTree = "<group>"; };
+		D08178DB178332A000B872A2 /* DnDOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDOverlayView.h; sourceTree = "<group>"; };
+		D08178DC178332A000B872A2 /* DnDOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDOverlayView.m; sourceTree = "<group>"; };
+		D08178DE178332A000B872A2 /* DnDProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDProtocols.h; sourceTree = "<group>"; };
+		D08178E6178332A000B872A2 /* sourceTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sourceTable.h; sourceTree = "<group>"; };
+		D08178E7178332A000B872A2 /* sourceTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sourceTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +66,8 @@
 		D081788117832FB700B872A2 = {
 			isa = PBXGroup;
 			children = (
-				D081789317832FB700B872A2 /* TestApplication */,
+				D081789317832FB700B872A2 /* Test Application */,
+				D08178D6178332A000B872A2 /* Drag and Drop Functionality */,
 				D081788C17832FB700B872A2 /* Frameworks */,
 				D081788B17832FB700B872A2 /* Products */,
 			);
@@ -77,15 +91,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D081789317832FB700B872A2 /* TestApplication */ = {
+		D081789317832FB700B872A2 /* Test Application */ = {
 			isa = PBXGroup;
 			children = (
+				D08178A517832FB700B872A2 /* MainStoryboard.storyboard */,
 				D081789C17832FB700B872A2 /* AppDelegate.h */,
 				D081789D17832FB700B872A2 /* AppDelegate.m */,
-				D08178A517832FB700B872A2 /* MainStoryboard.storyboard */,
 				D081789417832FB700B872A2 /* Supporting Files */,
 			);
-			name = TestApplication;
+			name = "Test Application";
 			path = TestDragAndDropStoryboardARC;
 			sourceTree = "<group>";
 		};
@@ -101,6 +115,23 @@
 				D08178A317832FB700B872A2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D08178D6178332A000B872A2 /* Drag and Drop Functionality */ = {
+			isa = PBXGroup;
+			children = (
+				D08178D9178332A000B872A2 /* DnDManager.h */,
+				D08178DA178332A000B872A2 /* DnDManager.m */,
+				D08178DB178332A000B872A2 /* DnDOverlayView.h */,
+				D08178DC178332A000B872A2 /* DnDOverlayView.m */,
+				D08178DE178332A000B872A2 /* DnDProtocols.h */,
+				D08178E6178332A000B872A2 /* sourceTable.h */,
+				D08178E7178332A000B872A2 /* sourceTable.m */,
+				D08178D7178332A000B872A2 /* destinationTable.h */,
+				D08178D8178332A000B872A2 /* destinationTable.m */,
+			);
+			name = "Drag and Drop Functionality";
+			path = TestDragAndDropStoryboardARC/testDragAndDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +202,10 @@
 			files = (
 				D081789A17832FB700B872A2 /* main.m in Sources */,
 				D081789E17832FB700B872A2 /* AppDelegate.m in Sources */,
+				D08178EE178332A000B872A2 /* destinationTable.m in Sources */,
+				D08178EF178332A000B872A2 /* DnDManager.m in Sources */,
+				D08178F0178332A000B872A2 /* DnDOverlayView.m in Sources */,
+				D08178F6178332A000B872A2 /* sourceTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

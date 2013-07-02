@@ -12,26 +12,34 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-6M-mV3">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-6M-mV3" customClass="sourceTable">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="306" id="qCC-wp-JcZ"/>
                                     <constraint firstAttribute="height" constant="378" id="zIc-RQ-LPF"/>
                                 </constraints>
+                                <sections/>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-So-1Oj">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-So-1Oj" customClass="destinationTable">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="306" id="zI5-py-avT"/>
                                 </constraints>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpE-9I-KSM" customClass="DnDOverlayView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mpE-9I-KSM" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="03B-Rm-JR1"/>
                             <constraint firstItem="cNY-So-1Oj" firstAttribute="bottom" secondItem="LyI-6M-mV3" secondAttribute="bottom" type="default" id="7WQ-Yf-eII"/>
+                            <constraint firstItem="mpE-9I-KSM" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="IGz-8U-XBL"/>
+                            <constraint firstItem="mpE-9I-KSM" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="MjZ-Yl-KAQ"/>
                             <constraint firstItem="cNY-So-1Oj" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="458" id="cJV-uF-FdN"/>
                             <constraint firstItem="LyI-6M-mV3" firstAttribute="top" secondItem="5" secondAttribute="top" constant="132" id="kYd-0u-SCm"/>
                             <constraint firstItem="cNY-So-1Oj" firstAttribute="top" secondItem="LyI-6M-mV3" secondAttribute="top" type="default" id="u39-iG-u8x"/>
+                            <constraint firstItem="mpE-9I-KSM" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="vks-vL-lkX"/>
                             <constraint firstItem="LyI-6M-mV3" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="90" id="x9U-hN-DRg"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -44,8 +52,17 @@
         </scene>
     </scenes>
     <classes>
+        <class className="DnDOverlayView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DnDOverlayView.h"/>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="destinationTable" superclassName="UITableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/destinationTable.h"/>
+        </class>
+        <class className="sourceTable" superclassName="UITableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/sourceTable.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
