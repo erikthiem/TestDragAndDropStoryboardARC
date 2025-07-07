@@ -11,7 +11,6 @@ The original README for the project is as follows:
 iPad Drag-and-Drop Demo
 August 2011
 Joshua Foster
-josh2112@gmail.com
 
 
 Demonstration of my drag-and-drop system for iPad. The system consists of two protocols, an invisible UIView, and a singleton.
